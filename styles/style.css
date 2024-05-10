@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100%;
+    scroll-timeline: --loadtimeline y;
+}
+
+.headtitle,.headtitle-2,.headtitle-3,.headtitle-5 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.headtitle-4 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    padding-right: 100px;
+}
+
+.tophead > h1 {
+    color: aliceblue;
+    font-size: 60px;
+    width: 50%;
+    animation: fadeinright;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.tophead > h2 {
+    color: aliceblue;
+    animation: fadeinright;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.tophead > .latin {
+    color: aliceblue;
+    font-size: 80px;
+    animation: fadeinright;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.bottomhead > p {
+    color: aliceblue;
+    animation: appear;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.breaker {
+    color: aliceblue;
+    animation: fadeinright;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+#autocarousel {
+    z-index: 0;
+}
+
+.carousel-item > img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+hr {
+    opacity: 100;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.tophead-2 > h2 {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.tophead-2 > .breaker {
+    width: 40%;
+}
+
+.tophead-2 > .breaker > hr {
+    width: 100%;
+}
+
+.breaker-2 {
+    color: aliceblue;
+}
+
+.bottomhead-2 > h1 {
+    color: aliceblue;
+    font-size: 80px;
+}
+
+.link > hr {
+    color: aliceblue;
+    margin-left: 0px;
+    width: 195px;
+}
+
+.section-2b > .headtitle-2 > .bottomhead-2 > .link > hr {
+    width: 175px;
+} 
+
+.link > p {
+    color: aliceblue;
+    height: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.tophead-3 > h1 {
+    color: aliceblue;
+    font-size: 60px;
+    width: 100%;
+}
+
+.underline-1 > hr {
+    width: 500px;
+    margin-left: 0px;
+    color: aliceblue;
+}
+
+.bottomhead-3 > .row > .col-md-5 > .link > hr {
+    width: 80px;
+}
+
+.bottomhead-3 > .row {
+    color: aliceblue;
+}
+
+.bottomhead-3 > .row > .kolom-2 {
+    margin-left: 7%;
+}
+
+.tophead-4 {
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    width: 25%;
+}
+
+.tophead-4 > h1 {
+    color: aliceblue;
+    text-align: right; 
+    font-size: 90px;
+}
+
+.bottomhead-4 > p {
+    color: aliceblue;
+    padding-left: 10%; 
+    text-align: right;
+}
+
+.norekdiv {
+    margin-left: auto;
+}
+
+.norekdiv > .pilihnorek {
+    font-size: 12px; 
+    width: 350px;
+    height: 30px; 
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    font-weight: 500;
+    border: 1px solid aliceblue;
+}
+
+.norekdiv > .pilihnorek > option {
+    font-size: 12px; 
+    color: black;
+}
+
+.norekdiv > button {
+    font-size: 12px; 
+    width: 60px; 
+    height: 30px; 
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    font-weight: 500;
+    border: 1px solid aliceblue;
+}
+
+.norekdiv > .pilihnorek:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.norekdiv > button:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.tophead-5 > h1 {
+    color: aliceblue;
+    font-size: 60px;
+    width: 100%;
+}
+ 
+.underline-2 > hr {
+    width: 350px;
+    margin-left: 0px;
+    color: aliceblue;
+}
+
+.tophead-5 > h4, .tophead-5 > p {
+    color: aliceblue;
+    width: 90%;
+}
+
+.form-wishes > form > textarea {
+    width: 90%;
+    height: 70px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 2px solid wheat;
+}
+
+.form-wishes > form > select {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 2px solid wheat;
+}
+
+.form-wishes > form > select > option {
+    color: black;
+}
+
+.form-wishes > button {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 2px solid wheat;
+}
+
+.form-wishes > button:hover {
+    background: aliceblue;
+    color: black;
+}
+
+.form-wishes > form > textarea::placeholder {
+    color: aliceblue;
+}
+
+.wish-holder {
+    width: 90%;
+    overflow-y: scroll;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.thewish {
+    color: aliceblue;
+}
+
+.thewish > hr {
+    margin-left: 0px;
+    width: 95%;
+}
+
+/*------------------ CSS buat love story & thankyou page lanjut dibawah ini ya :) ------------------ */
+.headtitle-6 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.tophead-6 {
+    display: flex;
+    width: 25%;
+}
+
+.tophead-6 > h2 {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.bottomhead-6 > p {
+    color: aliceblue;
+    padding-right: 10%; 
+    text-align: left;
+}
+
+.breaker-6 {
+    color: aliceblue;
+}
+
+#logo1 {
+    width: 100px; 
+    height: 40px;
+    object-position: bottom;
+}
+
+.link > p{
+    font-size: 16px;
+}
+
+@keyframes fadeinright {
+    from{
+        margin-left: 50%;
+        opacity: 0%;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@media (max-width:768px) { /* media queries buat responsive saat screen 768px */
+    .headtitle,.headtitle-2,.headtitle-3,.headtitle-4,.headtitle-5,.headtitle-6 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tophead,.tophead-2 {
+        margin-bottom: 200px;
+    }
+
+    .tophead > h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .tophead > h2 {
+        font-size: 20px;
+    }
+
+    .tophead > .latin {
+        font-size: 60px;
+    }
+
+    .tophead-2 > .breaker {
+        width: 95%;
+    }
+
+    .bottomhead-2 > h1 {
+        font-size: 40px;
+        width: 70%;
+    }
+
+    .bottomhead-2 > .link > p {
+        font-size: 15px;
+    } 
+
+    .bottomhead-2 > .link > hr {
+        width: 165px;
+    } 
+
+    .section-2b > .headtitle-2 > .bottomhead-2 > .link > hr {
+        width: 150px;
+    } 
+
+    .tophead-3 > h1, .tophead-5 > h1 {
+        font-size: 35px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h1, .bottomhead-3 > .row > .kolom-2 > h1 {
+        font-size: 25px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h2, .bottomhead-3 > .row > .kolom-2 > h2 {
+        font-size: 20px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h3, .bottomhead-3 > .row > .kolom-2 > h3, .tophead-5 > h4 {
+        font-size: 18px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > p, .bottomhead-3 > .row > .kolom-2 > p, .tophead-5 > p {
+        font-size: 12px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > .link > p , .bottomhead-3 > .row > .kolom-2 > .link > p {
+        font-size: 12px;
+        height: 5px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 {
+        margin-bottom: 50px;
+    }
+
+    .bottomhead-3 > .row > .col-md-5 > .link > hr {
+        width: 55px;
+    }
+
+    .bottomhead-3 > .row > .kolom-2 {
+        margin-left: 0px;
+    }
+
+    .underline-1 > hr {
+        width: 280px;
+    }
+
+    .tophead-4 {
+        margin-left: 0px;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .tophead-4 > h1 {
+        color: aliceblue;
+        text-align:start; 
+        font-size: 60px;
+    }
+
+    .bottomhead-4 > p {
+        padding-left: 0px;
+        text-align: start;
+    }
+
+    .norekdiv {
+        margin-left: 0px;
+    }
+
+    .norekdiv > .pilihnorek { 
+        width: 60%;
+    }
+
+    .underline-2 > hr {
+        width: 90%;
+    }
+
+    .form-wishes > form > textarea, .form-wishes > form > select, .form-wishes > button, .wish-holder {
+        font-size: 12px;
+    }
+
+    .form-wishes > form > textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .validasi {
+        font-size: 12px;
+    }
+
+    /* ----------------lanjut disini ya buat responsive saat screen 768px------------------ */
+
+    .tophead-6 > h2 {
+        font-size: 20px;
+    }
+
+    .bottomhead-6 {
+        font-size: 14px;
+    }
+
+    #logo1 {
+        width: 100px; 
+        height: 40px; 
+        object-position: bottom;
+    }
+
+    .link > p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:330px) { /* media queries buat responsive saat screen 330px */
+    .headtitle {
+        justify-content: space-evenly;
+        padding-left: 10px;
+    }
+
+    .tophead > h1,.tophead-3 > h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .tophead > h2 {
+        font-size: 15px;
+    }
+
+    .tophead > .latin {
+        font-size: 45px;
+    }
+
+    hr {
+        opacity: 100;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .bottomhead-2 > h1 {
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .bottomhead-2 > .link > p {
+        font-size: 11px;
+        height: 5px;
+    } 
+
+    .bottomhead-2 > .link > hr {
+        width: 120px;
+    } 
+
+    .section-2b > .headtitle-2 > .bottomhead-2 > .link > hr {
+        width: 110px;
+    } 
+
+    .tophead-3 > h1 {
+        font-size: 25px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h1, .bottomhead-3 > .row > .kolom-2 > h1 {
+        font-size: 20px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h2, .bottomhead-3 > .row > .kolom-2 > h2 {
+        font-size: 15px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > h3, .bottomhead-3 > .row > .kolom-2 > h3 {
+        font-size: 13px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > p, .bottomhead-3 > .row > .kolom-2 > p {
+        font-size: 11px;
+    }
+
+    .bottomhead-3 > .row > .kolom-1 > .link > p , .bottomhead-3 > .row > .kolom-2 > .link > p {
+        font-size: 11px;
+    }
+
+    .underline-1 > hr {
+        width: 90%;
+    }
+
+    .tophead-4 > h1 { 
+        font-size: 45px;
+    }
+
+    .tophead-5 > h1 {
+        font-size: 30px;
+        height: 20px;
+    }
+
+    /* ---------------lanjut disini ya buat responsive saat screen 330px---------------- */
+
+    .tophead-6 > h2 {
+        font-size: 16px;
+    }
+
+    .bottomhead-6 {
+        font-size: 10px;
+    }
+
+    #logo1 {
+        width: 100px; 
+        height: 40px; 
+        object-position: bottom;
+    }
+
+    .link > p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
